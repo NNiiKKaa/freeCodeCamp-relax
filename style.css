@@ -1,0 +1,218 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    /* border: 3px solid black; */
+    font-family: Raleway;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(fonts/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: italik;
+    src: url(fonts/Roboto-Italic.ttf);
+}
+
+
+#navbar {
+    background-color: #be3144;
+    /* position: fixed; */
+    width: 100%;
+ 
+}
+.nav-ul {
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+}
+@media (max-width: 500px) {
+    .nav-ul {
+        display: block;
+        text-align: center;
+    }
+    .nav-ul li a {
+        font-size: 1.5rem;
+    }
+    .welcome {
+        display: block;
+        text-align: center;
+        height: 50vh;
+    }
+}
+@media (max-width: 700px) {
+    .welcome {
+        display: block;
+        text-align: center;
+        height: 50vh;
+    }
+}
+.nav-ul a {
+    color: whitesmoke;
+    display: block;
+    font-size: 2.2rem;
+    padding: 2rem;
+    border-radius: 15px;
+}
+.nav-ul a:hover {
+    background-color: #45567d;
+    transition-duration: 0.5s;
+}
+
+#welcome-section {
+    width: 100%;
+    background-color: #000;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+#welcome-section h3 {
+    color: #be3144;
+    font-size: 3rem;
+    font-weight: 200;
+    font-family: italik;
+}
+
+
+#welcome-section h1 {
+    color: whitesmoke;
+    font-size: 6rem;
+    font-weight: 700;
+}
+
+/* article strats here */
+
+#projects {
+    max-width: 1980px;
+    width: 100%;
+    background-color: #45567d;
+}
+.projects-main-div {
+    max-width: 95%;
+    margin: 0 auto;
+    display: grid;
+    row-gap: 30px;
+}
+.article-title-div {
+    grid-area: 1/1/4/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+#projects h2 {
+    color: whitesmoke;
+    font-size: 30px;
+}
+.line {
+    color: whitesmoke;
+    max-width: 450px;
+    margin: 10px auto;
+}
+
+
+
+
+/* here starts cardsss */
+.article {
+    max-width: 400px;
+    background-color: #303841;
+}
+.article img {
+    width: 100%;
+    height: 300px;
+}
+
+.article-links {
+    display: flex;
+    justify-content: space-between;
+    max-width: 150px;
+    margin: 20px auto;
+}
+.article-links span {
+    color: brown;
+}
+.article-links p {
+    color: whitesmoke;
+}
+.article-links:hover {
+    font-size: 30px;
+    max-width: 300px;
+    transition-duration: 0.8s;
+}
+
+/* botton */
+.btn-showall {
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    grid-column: 2/3;
+    width: 150px;
+    margin: 20px auto;
+    
+}
+.btn-showall:hover {
+    background-color: red;
+    border-radius: 20px;
+    transition-duration: 1s;
+}
+
+/* here starts footer */
+footer {
+    background-color: #303841;
+}
+.lets-work-footer {
+    color: whitesmoke;
+    text-align: center;
+    padding: 50px;
+}
+.lets-work-footer h2 {
+    font-size: 6rem;
+}
+.lets-work-footer h3 {
+    font-size: 1.8rem;
+    font-family: italik;
+}
+
+.contact-links {
+    display: flex;
+    max-width: 800px;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+.contact-links a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+.contact-links a img {
+    width: 20px;
+    margin-right: 5px;
+    vertical-align: bottom;
+}
+.contact-links a:hover {
+    font-size: 25px;
+}
+.contact-links a:hover > img {
+    width: 25px;
+}
+
+
+.footer-and-info {
+    border-top: 4px solid #be3144;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    color: whitesmoke;
+}
